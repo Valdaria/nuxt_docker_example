@@ -21,6 +21,8 @@ services:
       - db-password
     volumes:
       - ./src:/usr/src/app/src:cached
+      - ./public:/usr/src/app/public:cached
+      - ./server:/usr/src/app/server:cached
   db:
     image: postgres
     restart: always
